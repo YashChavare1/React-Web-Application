@@ -1,0 +1,135 @@
+body {
+	background-color: silver;
+}
+
+/* Home */
+
+#img {
+	height: 600px;
+	width:600px;
+	border: 5px solid black;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+
+/* Enquiry */
+
+.sendOtp {
+	background-color: powderblue;
+	margin-top: 5%;
+	padding-top: 20px;
+	border: 3.5px solid black;
+	border-radius: 20px;
+	width: 370px;
+	height: 450px;
+}
+
+.sendOtp #ipt {
+	width: 220px;
+	margin-bottom: 10px;
+	outline: none;
+	border: 3px solid black;
+	border-radius: 10px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+
+}
+.sendOtp #ta {
+	padding-left: 10px;
+	padding-right: 10px;
+	resize: none;
+	width: 200px;
+	outline: none;
+	border-radius: 10px;
+	border: 3px solid black;
+	font-weight: bolder;
+	font-size: 17px;
+}
+.sendOtp #btn {
+	background-color: 	#FFD700;
+	margin-top: 20px;
+	border: 3px solid white;
+	border-radius: 10px;
+	height: 40px;
+	width: 180px;
+	font-size: 17px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+/* Submit OTP */
+
+.submitOtp {
+	background-color: powderblue;
+	margin-top: 8%;
+	padding-top: 50px;
+	border: 3.5px solid black;
+	border-radius: 20px;
+	width: 370px;
+	height: 170px;
+}
+
+.submitOtp #ipt {
+	outline: none;
+	border: 3px solid black;
+	border-radius: 10px;
+	height: 30px;
+	width: 200px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.submitOtp #btn {
+	background-color: 	#FFD700;
+	margin-top: 20px;
+	border: none;
+	border-radius: 10px;
+	height: 40px;
+	border: 3px solid white;
+	width: 180px;
+	font-size: 17px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+/* NavBar */
+
+.nav {
+	background-color: lightblue;
+	height: 40px;
+	padding-top: 10px;	
+}
+
+.nav a {
+	color: purple;
+	text-decoration: none;
+	margin: 50px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.feedbackform {
+	margin-top: 50px;
+	border: 3.5px solid black;
+	border-radius: 20px;
+	width: 500px;
+	height: 500px;
+}
+
+.feedbackform #ipt {
+	margin-right: 20px;
+}
+
+.feedbackform #ta {
+	width: 400px;
+}
