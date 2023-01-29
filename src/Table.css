@@ -1,0 +1,44 @@
+.details {
+	font-family: sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+.details td {
+	font-weight: bolder;
+	border: 2px solid #ddd;
+	padding: 8px;
+	font-family: Helvetica;
+}
+
+.details th {
+	text-align: center;
+	border: 2px solid #ddd;
+  	padding-top: 15px;
+  	padding-bottom: 15px;
+  	background-color: slateblue;
+  	color: white;
+}
+
+.details #data {
+	text-align: center;
+}
+
+.details #data-pkg {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.details #btn-del button {
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	padding: 5px 17px;
+	text-align: center;
+	background-color: red;
+}
+
+.details #btn-del {
+	text-align: center;
+}

@@ -1,15 +1,41 @@
-import main from "./image/Main.PNG";
-import ml from "./image/ML.PNG";
-import python from "./image/Python.PNG";
+import { useState, useEffect } from "react"; 
+import BigCard from "./BigCard";
+import { ref, get, child } from "firebase/database";
+import db from "./Db";
 
 function Home() {
+
+	const[data, setData] = useState([]);
+
+	useEffect(() => {
+		const dbref = ref(db);
+		get(child(dbref, "homeImages/"))
+		.then((snapshot) => {
+			if(snapshot.exists) {
+				setData([]);
+				const data = snapshot.val();
+				Object.values(data).map((da) => {
+					setData((oldArray) => [...oldArray, da])
+				})
+			}
+			else {
+				alert("No Data Found");
+			}
+		})
+		.catch(err => console.log(err));
+	},[]);
+
 	return(
 		<>
 			<center>
-				<h1>Kamal Classes By Kamal Sir</h1>
-				<img id="img" src={ main } /><br/>
-				<img id="img" src={ ml } /><br/>
-				<img id="img" src={ python } /><br/>
+				<h1>Welcome to Kamal Classes</h1><br/>
+				<div className="row">
+					{  
+						data.map((e) => {
+							return <BigCard imageUrl={e.urls} />	
+						})
+					}
+				</div>
 			</center>
 		</>
 	);

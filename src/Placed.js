@@ -1,3 +1,4 @@
+import './Table.css';
 import { useState, useEffect } from "react";
 import { ref, get, child } from "firebase/database";
 import db from "./Db";
@@ -28,7 +29,7 @@ function Placed() {
 		<>
 			<center>
 				<h1>Placed Student</h1>
-					<table border="2" style={{ widht: '50%' }}>
+					<table className="details">
 						<tr>
 							<th>Name</th>
 							<th>Company</th>
@@ -38,10 +39,10 @@ function Placed() {
 						{
 							data.map((e) => (
 								<tr>
-									<td>{ e.name }</td>
-									<td>{ e.company }</td>
-									<td>{ e.pkg }</td>
-									<td>{ e.college }</td>
+									<td id="data">{ e.name }</td>
+									<td id="data">{ e.company }</td>
+									<td id="data-pkg">{ e.pkg } LPA</td>
+									<td id="data">{ e.college }</td>
 								</tr>
 							))
 						}

@@ -1,0 +1,33 @@
+.form {
+	margin-top: 4%;
+	//border: 3px solid white;
+	width: 30%;
+	padding: 20px;
+  	box-shadow: 0 1px 0px 0 slateblue, 0 6px 15px 0 slateblue;
+}
+
+.form #ipt {
+	width: 80%;
+	padding: 2%;
+	font-size: 18px;
+	outline: none;
+	font-weight: bolder;
+	color: white;
+	background-color: transparent;
+	border: 2px solid slateblue;
+}
+
+.form #btn {
+	outline: none;
+	font-size: 15px;
+	color: white;
+	font-weight: bolder;
+	background-color: slateblue;
+	border: none;
+	width: 85%;
+	padding: 2%;
+}
+
+.form #btn:hover {
+	background-color: #5044b3;
+}

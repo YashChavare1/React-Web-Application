@@ -1,0 +1,26 @@
+#btn-add {
+	font-weight: bolder;
+	color: white;
+	background-color: red;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 8px;
+}
+
+#btn-add:hover {
+	background-color: #e60000; 
+}
+
+#btn-logout {
+	font-weight: bolder;
+	color: white;
+	padding: 5px 15px;
+	background-color:  #ff1a1a;
+	border: none;
+	border-radius: 10px;
+}
+
+#btn-logout:hover {
+	background-color: #e60000; 
+}
+
